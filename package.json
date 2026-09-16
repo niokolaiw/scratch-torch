@@ -1,0 +1,19 @@
+{
+  "name": "scratch-torch",
+  "version": "0.1.0",
+  "description": "pandas × torch × sklearn как кубики Scratch (расширение для TurboWarp)",
+  "private": true,
+  "scripts": {
+    "test": "npm run test:logic && npm run test:e2e",
+    "test:logic": "node tests/harness.js",
+    "test:e2e": "node tests/e2e.js",
+    "test:sb3": "node tests/sb3-verify.js",
+    "build:sb3": "python3 make-demo-sb3.py"
+  },
+  "overrides": {
+    "scratch-render-fonts": "1.0.252"
+  },
+  "devDependencies": {
+    "scratch-vm": "^5.0.300"
+  }
+}
